@@ -1,10 +1,10 @@
 # Enhancing by Decoupling: Exploration of a Unified VAE Framework
 ## Member
-Zhiyuan Wu u7155144
+Zhiyuan Wu (zhiyuan.wu@anu.edu.au)
 
-Dan Li    u7076589
+Dan Li (dan.li@anu.edu.au)
 
-Xinhui Bian u7096593
+Xinhui Bian (xinhui.bian@anu.edu.au)
 
 ## Dataset
 Our model is deployed on CelebAMask-HQ dataset (2020), which generates 30,000 high-resolution face images from CelebA.
@@ -14,45 +14,3 @@ The training and testing process will be implemented on MLCV1 Server with 8 Nvid
 
 ## Model
 See Section 5 of our paper in the repository.
-
-## Citation
-
-    @article{CelebAMask-HQ,
-    title={MaskGAN: Towards Diverse and Interactive Facial Image Manipulation},
-    author={Cheng-Han Lee and Ziwei Liu and Lingyun Wu and Ping Luo},
-    journal={Technical Report},
-    year={2019}
-    }
-
-    @inproceedings{CelebA,
-    title = {Deep Learning Face Attributes in the Wild},
-    author = {Ziwei Liu, Ping Luo, Xiaogang Wang, and Xiaoou Tang},
-    booktitle = {Proceedings of International Conference on Computer Vision (ICCV)},
-    year = {2015} 
-    }
-
-    @inProceedings{Daniel_2021_CVPR,
-    author    = {Daniel, Tal and Tamar, Aviv},
-    title     = {Soft-IntroVAE: Analyzing and Improving the Introspective Variational Autoencoder},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2021},
-    pages     = {4391-4400}
-    }
-
-    @inproceedings{behrmann2019invertible,
-    author={Behrmann, Jens and Grathwohl, Will and Chen, Ricky TQ and Duvenaud, David and Jacobsen, J{\"o}rn-Henrik},
-    title={Invertible residual networks},
-    booktitle={International Conference on Machine Learning},
-    pages={573--582},
-    year={2019},
-    organization={PMLR}
-    }
-
-    @article{heusel2017gans,
-    title={Gans trained by a two time-scale update rule converge to a local nash equilibrium},
-    author={Heusel, Martin and Ramsauer, Hubert and Unterthiner, Thomas and Nessler, Bernhard and Hochreiter, Sepp},
-    journal={Advances in neural information processing systems},
-    volume={30},
-    year={2017}
-    }
