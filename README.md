@@ -1,4 +1,4 @@
-# ENGN8536 Group Project
+# Enhancing by Decoupling: Exploration of a Unified VAE Framework
 ## Member
 Zhiyuan Wu u7155144
 
@@ -7,13 +7,13 @@ Dan Li    u7076589
 Xinhui Bian u7096593
 
 ## Dataset
-CelebAMask-HQ: 30,000 in total
+Our model is deployed on CelebAMask-HQ dataset (2020), which generates 30,000 high-resolution face images from CelebA.
 
-## Model 
+## Platform
+The training and testing process will be implemented on MLCV1 Server with 8 Nvidia GeForce RTX 2080Ti GPU, 11GB memory each.
 
-###Stage 1: AutoEncoder
-
-###Stage 2: iResNet
+## Model
+See Section 5 of our paper in the repository.
 
 ## Citation
 
