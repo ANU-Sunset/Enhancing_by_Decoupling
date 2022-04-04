@@ -14,12 +14,15 @@ The training and testing process will be implemented on MLCV1 Server with 8 Nvid
 
 ## Model
 ![](./figs/pipeline.png)
+
 As shown in the figure, our model adopts a deterministic autoencoder and cascades it with a strictly invertible network, which entails from conventional VAE frameworks the encoder-decoder structure for data reconstruction and the strucural constraint on the feature manifold for potential feature sampling.
 Our main modification focuses on decoupled training of two stages: the deterministic autoencoder ($g_\phi$ for the encoder and $h_\phi$ for the decoder) is optimized using original data $x$ at the first stage, producing respective intermediate features $z$, and at the second stage, given these features $z$ as the input, we separately train a strictly invertible network $f_\theta$ to map them to their dual forms $z'$ in the feature manifold which approximates the normal distribution; during generation, we sample potential features $z'$ from the normal distribution, feeding it to $f_\theta^{-1}$, i.e. the inverse of the invertible mapping $f_\theta$, and again feeding the resulting potential intermediate feature $z$ into the decoder $h_\phi$ at the first stage.
 
 The training objective of the first stage is to minimize the mean square error (MSE) loss
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?\\frac{1}{N}\\sum_{i=1}^N\\left\\|x^{(i)}-h_\\phi\\circ g_\\phi\\left(x^{(i)}\\right)\\right\\|_2^2," />
+</p><p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?x=1" />
 </p>
 where $x^{(i)}$ denotes the $i$-th training sample and $N$ is the size of the dataset. For the second stage, the objective becomes the maximization of
 <p align="center">
