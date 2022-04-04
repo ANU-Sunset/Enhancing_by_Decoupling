@@ -1,5 +1,5 @@
 # Enhancing by Decoupling: Exploration of a Unified VAE Framework
-## Member
+## Author
 Zhiyuan Wu (zhiyuan.wu@anu.edu.au)
 
 Dan Li (dan.li@anu.edu.au)
