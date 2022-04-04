@@ -20,16 +20,11 @@ Our main modification focuses on decoupled training of two stages: the determini
 
 The training objective of the first stage is to minimize the mean square error (MSE) loss
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?\\frac{1}{N}\\sum_{i=1}^N\\left\\|x^{(i)}-h_\\phi\\circ g_\\phi\\left(x^{(i)}\\right)\\right\\|_2^2," />
-</p><p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?x=1" />
+  <img src="https://latex.codecogs.com/svg.latex?\frac{1}{N}\sum_{i=1}^N\left\|x^{(i)}-h_\phi\circ g_\phi\left(x^{(i)}\right)\right\|_2^2," />
 </p>
-<img src="https://latex.codecogs.com/svg.latex?x=\\frac{2}{3}" />
-
-<img src="https://latex.codecogs.com/svg.latex?x=\frac{2}{3}" />
 where $x^{(i)}$ denotes the $i$-th training sample and $N$ is the size of the dataset. For the second stage, the objective becomes the maximization of
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?\\frac{1}{N}\\sum_{i=1}^N\\left[\\log p_{z'}\\left(f_\\theta\\circ g_\\phi\\left(x^{(i)}\\right)\\right)+\\log\\left|\\frac{\\partial f_\\theta}{\\partial z}\\right|_{z=g_\\phi\\left(x^{(i)}\\right)}\\right]," />
+  <img src="https://latex.codecogs.com/svg.latex?\frac{1}{N}\sum_{i=1}^N\left[\log p_{z'}\left(f_\theta\circ g_\phi\left(x^{(i)}\right)\right)+\log\left|\frac{\partial f_\theta}{\partial z}\right|_{z=g_\phi\left(x^{(i)}\right)}\right]," />
 </p>
 where $p_{z'}$ denotes the normal distribution and $\left|\partial f_\theta/\partial z\right|$ denotes the Jacobian determinant.
 This loss encourages the invertible mapping $f_\theta$ to have a normal-distributed co-domain.
