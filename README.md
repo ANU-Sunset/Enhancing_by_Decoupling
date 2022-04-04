@@ -24,7 +24,7 @@ The training objective of the first stage is to minimize the mean square error (
 </p>
 where $x^{(i)}$ denotes the $i$-th training sample and $N$ is the size of the dataset. For the second stage, the objective becomes the maximization of
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?\frac{1}{N}\sum_{i=1}^N\left[\log{p}_{z'}\left(f_\theta\circ{g}_\phi\left(x^{(i)}\right)\right)+\log\left|\frac{\partial f_\theta}{\partial{z}}\right|_{z=g_\phi\left(x^{(i)}\right)}\right]," />
+  <img src="https://latex.codecogs.com/svg.latex?\frac{1}{N}\sum_{i=1}^N\left[\log{p}_{z'}\left(f_\theta\circ{g}_\phi\left(x^{(i)}\right)\right)+\log\left|\frac{\partial{f}_\theta}{\partial{z}}\right|_{z=g_\phi\left(x^{(i)}\right)}\right]," />
 </p>
 where $p_{z'}$ denotes the normal distribution and $\left|\partial f_\theta/\partial z\right|$ denotes the Jacobian determinant.
 This loss encourages the invertible mapping $f_\theta$ to have a normal-distributed co-domain.
