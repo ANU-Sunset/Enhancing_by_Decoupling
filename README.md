@@ -24,6 +24,9 @@ The training objective of the first stage is to minimize the mean square error (
 </p><p align="center">
   <img src="https://latex.codecogs.com/svg.latex?x=1" />
 </p>
+<img src="https://latex.codecogs.com/svg.latex?x=\\frac{2}{3}" />
+
+<img src="https://latex.codecogs.com/svg.latex?x=\frac{2}{3}" />
 where $x^{(i)}$ denotes the $i$-th training sample and $N$ is the size of the dataset. For the second stage, the objective becomes the maximization of
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?\\frac{1}{N}\\sum_{i=1}^N\\left[\\log p_{z'}\\left(f_\\theta\\circ g_\\phi\\left(x^{(i)}\\right)\\right)+\\log\\left|\\frac{\\partial f_\\theta}{\\partial z}\\right|_{z=g_\\phi\\left(x^{(i)}\\right)}\\right]," />
