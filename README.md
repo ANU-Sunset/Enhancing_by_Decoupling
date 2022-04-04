@@ -23,7 +23,7 @@ The training objective of the first stage is to minimize the mean square error (
   <img src="https://latex.codecogs.com/svg.latex?\frac{1}{N}\sum_{i=1}^N\left\|x^{(i)}-h_\phi\circ g_\phi\left(x^{(i)}\right)\right\|_2^2," />
 </p>
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?\frac{1}{N}\sum_{i=1}^N\left\|x^{(i)}-h_\phi\circ g\right\|_2^2," />
+  <img src="https://latex.codecogs.com/svg.latex?\frac{1}{N}\sum_{i=1}^N\left\|x^{(i)}-h_\phi\circ\right\|_2^2," />
 </p>
 where $x^{(i)}$ denotes the $i$-th training sample and $N$ is the size of the dataset. For the second stage, the objective becomes the maximization of
 <p align="center">
